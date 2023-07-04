@@ -35,7 +35,7 @@ try{
 
     const UserData:any=await executeQuery(Query);
 
-    // check if a particular user data is already in database
+   
 
 
     if(UserData.length>0) return res.status(400).send({message: "user is already registered "});
