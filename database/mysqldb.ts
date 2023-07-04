@@ -19,5 +19,23 @@ const connection = mysql.createConnection({
     console.log('successfully Connected to the database');
   });
   
+
+  export const executeQuery = (sqlQuery: string) => {
+    return new Promise((resolve, reject) => {
+        try {
+            connection.query(sqlQuery, (error, response) => {
+                console.log("query error", error)
+                if (error) return reject(error)
+
+                return resolve(response)
+            })
+        } catch (error) {
+            console.log("connection error ", error)
+
+        }
+    })
+}
+
+
   export default connection;
   
