@@ -1,0 +1,25 @@
+.body{
+    background-color:yellowgreen;
+  
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.container{
+    background-color: aqua;
+    border: 5px solid;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    
+
+
+}
+.btn{
+    border-radius: 10px;
+    background-color: blue;
+    color: whitesmoke;
+    margin-left: 0px;
+}
